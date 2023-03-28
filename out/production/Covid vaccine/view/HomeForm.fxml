@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="491.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeFormController">
+   <children>
+      <ImageView fitHeight="522.0" fitWidth="839.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/h.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="328.0" layoutY="-8.0" prefHeight="74.0" prefWidth="158.0" text="Home" textFill="#ff4838">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="51.0" layoutY="215.0" mnemonicParsing="false" onAction="#btnSearchYourVaccineCardOnAction" prefHeight="54.0" prefWidth="282.0" style="-fx-background-color: blue; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Search Your Vaccine Card" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="471.0" layoutY="215.0" mnemonicParsing="false" onAction="#EnterYourVaccineDetailsOnAction" prefHeight="54.0" prefWidth="282.0" style="-fx-background-color: blue; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Enter Your Vaccine Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="597.0" layoutY="453.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="54.0" prefWidth="192.0" style="-fx-background-color: red; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

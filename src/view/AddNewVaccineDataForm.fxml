@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewVaccineDataFormController">
+   <children>
+      <AnchorPane fx:id="root" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="866.0">
+         <children>
+            <ImageView fitHeight="723.0" fitWidth="1392.0" layoutX="-187.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/coronavirus.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-60.0" layoutY="-2.0" prefHeight="680.0" prefWidth="900.0">
+               <children>
+                  <Label layoutX="142.0" layoutY="100.0" prefHeight="22.0" prefWidth="77.0" text="NIC" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="654.0" layoutY="454.0" mnemonicParsing="false" onAction="#btnSaveDataOnAction" prefHeight="43.0" prefWidth="182.0" style="-fx-background-color: green; -fx-background-radius: 20px;" text="Save Data" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="129.0" layoutY="161.0">
+                     <children>
+                        <Label layoutY="6.0" prefHeight="22.0" prefWidth="77.0" text="Name">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="66.0" prefHeight="22.0" prefWidth="77.0" text="Address">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="186.0" prefHeight="22.0" prefWidth="77.0" text="Age">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="239.0" prefHeight="22.0" prefWidth="77.0" text="Contact">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtName" layoutX="88.0" prefHeight="26.0" prefWidth="254.0" promptText="Enter Your Name" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtAddress" layoutX="88.0" layoutY="59.0" prefHeight="13.0" prefWidth="254.0" promptText="Enter Your Address" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtAge" layoutX="88.0" layoutY="180.0" prefHeight="13.0" prefWidth="254.0" promptText="Enter Your Age" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtContactNumber" layoutX="88.0" layoutY="239.0" prefHeight="13.0" prefWidth="254.0" promptText="Enter Your Phone Number" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="txtGender" layoutX="88.0" layoutY="120.0" prefHeight="39.0" prefWidth="254.0" promptText="Gender" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
+                        <Label layoutY="125.0" prefHeight="22.0" prefWidth="77.0" text="Gender">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="510.0" layoutY="163.0">
+                     <children>
+                        <TextField fx:id="txtDistrict" layoutX="105.0" layoutY="179.0" prefHeight="13.0" prefWidth="254.0" promptText="Enter Your District" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="txtMohArea" layoutX="105.0" layoutY="239.0" prefHeight="13.0" prefWidth="254.0" promptText="Enter Your MOH Area" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutY="185.0" prefHeight="22.0" prefWidth="77.0" text="District">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="245.0" prefHeight="26.0" prefWidth="98.0" text="MOH Area">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="txtDose" layoutX="107.0" layoutY="59.0" prefHeight="39.0" prefWidth="254.0" promptText="Dose" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
+                        <ComboBox fx:id="txtVaccine" layoutX="107.0" prefHeight="39.0" prefWidth="254.0" promptText="Vaccine" style="-fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px;" />
+                        <Label layoutY="65.0" prefHeight="22.0" prefWidth="77.0" text="DOSE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="6.0" prefHeight="22.0" prefWidth="77.0" text="Vaccine">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="txtDate" layoutX="105.0" layoutY="119.0" prefHeight="39.0" prefWidth="254.0" promptText="Date" style="-fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;" />
+                        <Label layoutX="1.0" layoutY="126.0" prefHeight="26.0" prefWidth="98.0" text="Date">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="tblVaccine" layoutX="224.0" layoutY="515.0" prefHeight="179.0" prefWidth="522.0" style="-fx-background-color: white; -fx-region-border: 2px;">
+                     <columns>
+                        <TableColumn prefWidth="89.60003662109375" text="Dose" />
+                        <TableColumn prefWidth="132.0" text="Vaccine" />
+                        <TableColumn prefWidth="140.79998779296875" text="Date" />
+                        <TableColumn prefWidth="152.79998779296875" text="MOH" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="374.0" layoutY="14.0" text="Vaccine Card" textFill="#f72e2e">
+                     <font>
+                        <Font name="System Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNIC" layoutX="228.0" layoutY="85.0" prefHeight="55.0" prefWidth="158.0" text="NIC Number" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button layoutX="699.0" layoutY="699.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: red; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="14.0" layoutY="699.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="43.0" prefWidth="158.0" style="-fx-background-color: red; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
