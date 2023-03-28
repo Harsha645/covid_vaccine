@@ -132,4 +132,8 @@ public class AddNewVaccineDataFormController {
         stage.setScene(scene);
         stage.centerOnScreen();
     }
+
+    public static void printHarsha(){
+        System.out.println("harsha pramod");
+    }
 }
